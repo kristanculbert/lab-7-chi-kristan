@@ -39,6 +39,29 @@ get_guns <- gc_df %>%
 
 rownames(get_guns) <-c("Female", "Male")
   
+```
+
+Collaborator: Tyanna Bui
+
+Doing Chi-Squared - Is there a sig association between sex and gun control recommendations?
+
+```{r}
+# calculates prop of cell/whole table... ", 1" calculates by row & storing as matrix (as.matrix)
+guns_prop = prop.table(as.matrix(get_guns), 1) 
+guns_prop
+
+# performing chi-squared
+guns_x2 = chisq.test(get_guns)
+guns_x2 # p-value < 2.2e-16
 
 ```
+
+Recommended government action on gun access differs significantly for males and females ($\chi^2$(`r guns_x2$parameter`) = ...., p < 0.001).
+
+Point of why this is.. explain interesting observations from the table to help audience understand.
+
+
+
+
+
 
