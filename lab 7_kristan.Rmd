@@ -1,4 +1,4 @@
----
+ ---
 title: "Gun Control Chi-Square"
 author: "Kristan Culbert"
 date: "November 14, 2018"
@@ -12,3 +12,5 @@ knitr::opts_chunk$set(echo = TRUE)
 I'm Kristan and I'm adding text here to see if my collaborators can get this file. 
 
 It's Kristan again and I'm updating some text. 
+
+Today is Wednesday and I'm very excited that tomorrow is Thursday because that means it's almost Friday :D
