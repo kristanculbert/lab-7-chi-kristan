@@ -29,7 +29,7 @@ library(tidyverse)
 gc_df <- read_csv("gc_df.csv")
 
 #Count function allows you to set groupings for categorical variables
-#Spread function allows you to 
+#Spread function allows you to spread a key-value pair across multiple columns.
 
 get_guns <- gc_df %>% 
   filter(gender !="NA", make_get_guns !="NA") %>% 
