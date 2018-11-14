@@ -16,3 +16,29 @@ It's Kristan again and I'm updating some text.
 Today is Wednesday and I'm very excited that tomorrow is Thursday because that means it's almost Friday :D
 
 Dunno about you, but I'm planning to sleep in this weekend!!! #yass
+
+Creator (Kristan): 
+
+Getting gc_df.csv data, loading the tidyverse, and getting some summary counts
+
+```{r}
+
+# Loading tidyverse, loading in data, getting summary counts
+
+library(tidyverse)
+gc_df <- read_csv("gc_df.csv")
+
+#Count function allows you to set groupings for categorical variables
+#Spread function allows you to 
+
+get_guns <- gc_df %>% 
+  filter(gender !="NA", make_get_guns !="NA") %>% 
+  count(gender, make_get_guns) %>% 
+  spread(make_get_guns, n) %>% 
+  select(-gender)
+
+rownames(get_guns) <-c("Female", "Male")
+  
+
+```
+
