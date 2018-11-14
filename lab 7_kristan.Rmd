@@ -10,3 +10,5 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 I'm Kristan and I'm adding text here to see if my collaborators can get this file. 
+
+It's Kristan again and I'm updating some text. 
